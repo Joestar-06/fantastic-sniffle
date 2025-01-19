@@ -1,0 +1,11 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import norm, binom, poisson
+x = np.linspace(-5, 10, 100)
+pdf = norm.pdf(x, loc=2, scale=1.5)
+plt.plot(x, pdf, label='Normal PDF',color='black')
+plt.title('Probability Density Function PDF (Normal)')
+plt.xlabel('x')
+plt.ylabel('Density')
+plt.legend()
+plt.show()
